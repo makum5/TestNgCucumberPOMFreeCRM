@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Test Suite]" parallel="tests">
+  <test thread-count="2" name="Free CRM Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.freecrm.qe.runner.MyTestNGRunner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.freecrm.qe.runner.MyTestNGRunner -->
+    </classes>
+  </test> <!-- Free CRM Test(failed) -->
+</suite> <!-- Failed suite [Free CRM Test Suite] -->
