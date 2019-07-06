@@ -1,7 +1,0 @@
-com\freecrm\qe\pages\HomePage.class
-com\freecrm\qe\pages\LoginPage.class
-com\freecrm\qe\pages\ContactPage.class
-com\freecrm\qe\utilities\TestUtils.class
-com\freecrm\qe\stepdefinition\StepDefinition.class
-com\freecrm\qe\runner\MyTestNGRunner.class
-com\freecrm\qe\base\BaseClass.class

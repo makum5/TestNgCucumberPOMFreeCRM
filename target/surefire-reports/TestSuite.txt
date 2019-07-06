@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.401 s <<< FAILURE! - in TestSuite
-feature(com.freecrm.qe.runner.MyTestNGRunner)  Time elapsed: 41.84 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.AssertionError: Home page was not loaded properly expected [CRMM] but found [CRM]
-	at com.freecrm.qe.runner.MyTestNGRunner.feature(MyTestNGRunner.java:31)
-Caused by: java.lang.AssertionError: Home page was not loaded properly expected [CRMM] but found [CRM]
-

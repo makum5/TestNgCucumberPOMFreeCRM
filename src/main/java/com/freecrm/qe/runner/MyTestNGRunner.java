@@ -11,7 +11,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(features = "src/test/java/Features", glue = { "com.freecrm.qe.stepdefinition" }, dryRun = false,
 monochrome = true,
-tags = {"@Regression,@Sanity"},
+tags = {"@ContactPage"},
 plugin = {
 		"pretty",
 		"json:target/cucumber-json-reports/cucumber.json" }
