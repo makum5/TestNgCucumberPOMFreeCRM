@@ -2,8 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Free CRM Test Suite" verbose="1" parallel="tests"
 	thread-count="1" configfailurepolicy="continue">
-	<test name="Free CRM Test" annotations="JDK"
-		preserve-order="true">
+	<listeners>
+		<listener class-name="com.freecrm.qe.listeners.TestNgListener" />
+	</listeners>
+	<parameter name="SuiteLevel" value="Suite Level Parameter" />
+	<test name="Free CRM Test" annotations="JDK" preserve-order="true">
+		<parameter name="TestLevel" value="Test Level Parameter" />
 		<classes>
 			<class name="com.freecrm.qe.runner.MyTestNGRunner" />
 		</classes>

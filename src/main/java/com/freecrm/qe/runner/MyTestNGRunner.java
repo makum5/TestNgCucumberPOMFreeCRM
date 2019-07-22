@@ -23,20 +23,24 @@ public class MyTestNGRunner {
 
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() throws Exception {
+		System.out.println("Before Class");
 		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
 	}
 
 	@Test(groups = "cucumber", description = "Automating Free CRM Application", dataProvider = "features")
 	public void feature(CucumberFeatureWrapper cucumberFeature) {
+		System.out.println("Test Method");
 		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 	}
 
 	@DataProvider
 	public Object[][] features() {
+		System.out.println("Data Provider");
 		return testNGCucumberRunner.provideFeatures();
 	}
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
+    	System.out.println("After Class");
         testNGCucumberRunner.finish();
     }
 }
